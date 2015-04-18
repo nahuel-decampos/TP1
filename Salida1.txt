@@ -6,7 +6,7 @@ EJEMPLOS DE USO DE VARIABLES, OPERACIONES Y TIPOS DE DATOS
 El programa toma un numero aleatorio entre 0 y 9
 Luego realiza una *comparacion* con numeros primos dados en ese rango
 Da una respuesta segun el valor *booleano* de la comparacion
-El valor 5 es primo 
+El valor 3 es primo 
 
 
 >> Ejemplo de concatenacion de caracteres (char)
@@ -19,12 +19,14 @@ Se forma la nueva palabra: algoritmos
 >> Ejemplo de manipulacion de cadenas strings
 Usando los chars anteriores para formar una frase
 Luego se calcula la longitud de dicha frase
-Se formo la frase: El ritmo de algoritmos
-La longitud de la frase (contando espacios) es: 22
+
+Se formo la frase: Se algo de algoritmos
+La longitud de la frase (contando espacios) es: 21
 
 
 >> Ejemplo de una operacion con double e int
 Se busca la parte decimal de un valor elegido (pi) sin usar la funcion fmod
 Para ello se le resto a este valor el mismo pero forzado como entero
 Esta maniobra poco recomendada, para el ejemplo sirve y nos da la parte decimal de pi
-0.141593
+
+La parte decimal es: 0.141593
