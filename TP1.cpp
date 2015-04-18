@@ -23,16 +23,7 @@ int main()
     int x;
     srand(time(NULL));
     x = rand()%10;
-
-    bool primo(false);
-     if (x == 2)
-        primo = true;
-    else if (x == 3)
-        primo = true;
-    else if (x == 5)
-        primo = true;
-    else if (x == 7)
-        primo = true;
+    bool primo = (x == 2 || x == 3 || x == 5 || x == 7);
 
     if (primo)
         cout << "El valor " << x << " es primo \n\n";
@@ -41,24 +32,25 @@ int main()
 
     cout << "\n>> Ejemplo de concatenacion de caracteres (char)\n";
     cout << "Se toman dos palabras char para formar una nueva que tambien es char\n";
-    char str1[16];
-    char str2[16];
-    strcpy(str1, "algo");
-    strcpy(str2, "ritmos");
-    cout << "Primer palabra: " << str1 << "\n";
-    cout << "Segunda palabra: " << str2 << "\n";
-    strcat(str1, str2);
-    cout << "Se forma la nueva palabra: " << str1 << "\n\n";
+    char cha1[12];
+    char cha2[12];
+    char cha3[12];
+    strcpy(cha1, "algo");
+    strcpy(cha2, "ritmos");
+    strcpy(cha3, cha1);
+    cout << "Primer palabra: " << cha1 << "\n";
+    cout << "Segunda palabra: " << cha2 << "\n";
+    strcat(cha3, cha2);
+    cout << "Se forma la nueva palabra: " << cha3 << "\n\n";
 
     cout << "\n>> Ejemplo de manipulacion de cadenas strings\n";
     cout << "Usando los chars anteriores para formar una frase\n";
     cout << "Luego se calcula la longitud de dicha frase\n";
-    string str3(str2, 0, 5);
-    string str4 = str1;
-    string str5;
-    str5 = "El " + str3 + " de " + str4;
-    cout << "Se formo la frase: " << str5 <<"\n";
-    cout << "La longitud de la frase (contando espacios) es: " << str5.size() << "\n\n";
+    string str1 = cha1;
+    string str2 = cha3;
+    string str3 = "Se " + str1 + " de " + str2;
+    cout << "\nSe formo la frase: " << str3 <<"\n";
+    cout << "La longitud de la frase (contando espacios) es: " << str3.size() << "\n\n";
 
     cout << "\n>> Ejemplo de una operacion con double e int\n";
     cout << "Se busca la parte decimal de un valor elegido (pi) sin usar la funcion fmod\n";
