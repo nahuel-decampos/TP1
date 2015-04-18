@@ -32,8 +32,8 @@ int main()
 
     cout << "\n>> Ejemplo de concatenacion de caracteres (char)\n";
     cout << "Se toman dos palabras char para formar una nueva que tambien es char\n";
-    char cha1[12];
-    char cha2[12];
+    char cha1[5];
+    char cha2[7];
     char cha3[12];
     strcpy(cha1, "algo");
     strcpy(cha2, "ritmos");
@@ -61,5 +61,5 @@ int main()
     const double PI = atan(1.0)*4.0;
     z = PI;
     y = PI - z;
-    cout << y;
+    cout << "\nEl resto es: " << y << "\n";
 }
