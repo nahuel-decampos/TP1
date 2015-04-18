@@ -61,5 +61,5 @@ int main()
     const double PI = atan(1.0)*4.0;
     z = PI;
     y = PI - z;
-    cout << "\nEl resto es: " << y << "\n";
+    cout << "\nLa parte decimal es: " << y << "\n";
 }
